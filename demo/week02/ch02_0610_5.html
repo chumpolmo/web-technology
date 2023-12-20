@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Beritokai vs Liverpool Club</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Chumpol Mokarat">
+	<meta name="keywords" content="Web Technology,เทคโนโลยีเว็บ">
+	<meta name="description" content="รายวิชาเกี่ยวกับการออกแบบและพัฒนาเว็บไซต์เบื้องต้น">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+	<style>
+		* {
+		  box-sizing: border-box;
+		  margin: 0px;
+		}
+
+		body {
+		  font-family: "IBM Plex Sans Thai", Arial, Helvetica, sans-serif;
+		}
+
+		/* Style the header */
+		header {
+		  background-color: #535744;
+		  padding: 30px;
+		  text-align: left;
+		  font-size: 35px;
+		  color: white;
+		}
+
+		/* Create two columns/boxes that floats next to each other */
+		nav {
+		  float: left;
+		  width: 20%;
+		  /*height: 300px;  only for demonstration, should be removed */
+		  /*background: #777C63;*/
+		  padding: 20px;
+		  /*color: #E6F587;*/
+		}
+
+		/* Style the list inside the menu */
+		nav ul {
+		  list-style-type: none;
+		  padding: 0;
+		}
+
+		article {
+		  float: left;
+		  padding: 20px;
+		  width: 80%;
+		  background-color: #EAF5C2;
+		  /*height: 300px;  only for demonstration, should be removed */
+		}
+
+		/* Clear floats after the columns */
+		section::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Style the footer */
+		footer {
+		  background-color: #92A885;
+		  padding: 10px;
+		  text-align: center;
+		  color: #EAF5C2;
+		}
+
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+		  nav, article {
+		    width: 100%;
+		    height: auto;
+		  }
+		}
+	</style>
+</head>
+<body>
+
+<!-- Source : https://www.w3schools.com/html/html_layout.asp -->
+
+<header>
+  <h2>
+  	<a href="ch02_0610_5.html">
+  		<img src="./images/liverpool_logo.png" title="Liverpool" style="width: 50px;vertical-align: baseline;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L I V E R P O O L&nbsp;&nbsp;&nbsp;&nbsp;F. C.
+	</h2>
+</header>
+
+<section>
+  <nav>
+  	<div>M E N U</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Location</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="background-color: #C8D1A5; padding: 5px;">YOU'LL NEVER WALK ALONE</h1>
+    <p style="text-align: center;">
+    	<img src="./images/liverpool_logo.png" title="Liverpool" style="width: 30%;">
+    </p>
+    <p>Liverpool Footbal Club</p>
+    <p>(ที่มา: <a href="https://en.wikipedia.org/wiki/Liverpool_F.C.">Liverpool_F.C.</a>)</p>
+  </article>
+</section>
+
+<footer>
+  <p>Copyright &copy; 2023 By Khaegchumpol<br />
+  	<a href="https://www.facebook.com" target="_blank">
+  	<img src="./images/facebook.png" style="width: 40px;">
+  	</a>
+  	<a href="https://www.instagram.com" target="_blank">
+  	<img src="./images/igicon.png" style="width: 40px;">
+  	</a>
+  	<a href="mailto:chumpol_mo@rmutto.ac.th" target="_blank">
+  	<img src="./images/emailicon.png" style="width: 40px;">
+  	</a>
+  </p>
+</footer>
+
+</body>
+</html>
+

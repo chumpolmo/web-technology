@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Week06: JavaScript Language</title>
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<script src="js/9999_9.js"></script>
+	</head>
+	<body>
+
+	<div id="myWeb">
+		<!-- Add HTML elements with JavaScript -->
+		<h1>การปรับข้อมูลใน HTML Elements</h1>
+		<div id="txt01" style="background-color: #F0F8FF;">Beritokai</div>
+		<div id="txt02" style="background-color: #E0FFFF;"></div>
+		<button onclick="copyText()">Copy Text</button>
+
+		<h1>การควบคุมหลอดไฟ</h1>
+		<button onclick="onOffLamp(1)">เปิด</button>
+		<img id="lamp" src="images/light-bulb-off.png" style="width: 20%;">
+		<button ondblclick="onOffLamp(0)">ปิด</button>
+	</div>
+	<div style="text-align: center;">
+		<button onclick="changeFont('small')">Small Font</button>
+		<button onclick="changeFont('medium')">Medium Font</button>
+		<button onclick="changeFont('large')">Large Font</button><br />
+		<button onclick="changeBg('MediumPurple')">MediumPurple</button>
+		<button onclick="changeBg('LightSalmon')">LightSalmon</button>
+	</div>
+	
+	<!-- JavaScript และ HTML Forms -->
+	<p style="text-align: center;">
+		<h1>การคำนวณราคาสินค้ารวมภาษี</h1>
+		<hr/>
+		<form>
+			<label>ราคาสินค้า</label>
+			<input type="text" id="prodPrice"><br/>
+			<label>VAT (%)</label>
+			<input type="number" id="prodVat"><br/>
+			<button type="button" onclick="calculateVat()">คำนวณ</button>
+			<button type="reset">เคลียร์</button>
+		</form>
+		<hr/>
+		<h2>ผลลัพธ์</h2>
+		<label>ราคาสินค้า <label id="resPrice">-</label> บาท</label><br>
+		<label>ราคา Vat <label id="vat">-</label>% <label id="resVat">-</label> บาท</label><br>
+		<label>ราคาสินค้ารวม Vat <label id="resTotalPrice">-</label> บาท</label><br>
+	</p>
+
+	</body>
+</html>
