@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week05: Bootstrap-5.3.2</title>
+  	<meta name="author" content="Chumpol Mokarat">
+  	<meta name="description" content="นำเสนอเกี่ยวกับการจัดรูปแบบเอกสาร HTML ด้วย CSS และ CSS Framework (Bootstrap)">
+  	<meta name="keywords" content="HTML, CSS, CSS Framework, Bootstrap-5">
+  	<!-- <link rel="stylesheet" type="text/css" href="./css/khaeg.css"> -->
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
+  	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  	<!-- Option 1: Include in HTML -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  	<style type="text/css">
+  		body {
+  			font-family: Prompt;
+  		}
+  	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-primary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand text-light" href="index.html"><i class="bi bi-bootstrap"></i> Beritokai</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active text-light" aria-current="page" href="#">หน้าแรก</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link text-light" href="#">รู้จักเว็บเรา</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            สถานที่เที่ยวใกล้ ม.
+	          </a>
+	          <ul class="dropdown-menu bg-dark-subtle">
+	            <li><a class="dropdown-item" href="#">ตลาดห้วยขวาง</a></li>
+	            <li><a class="dropdown-item" href="#">อนุสาวรีย์ชัยสมรภูมิ</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#">ตลาดนัดจตุจักร</a></li>
+	            <li><a class="dropdown-item" href="#">สวนจตุจักร</a></li>
+	            <li><a class="dropdown-item" href="#">เซ็นทรัลพระราม 9</a></li>
+	            <li><a class="dropdown-item" href="#">จ๊อดแฟร์พระราม 9</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a href="#" class="nav-link text-light" aria-disabled="true">ติดต่อเรา</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex" role="search">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-subtle text-light" type="submit"><i class="bi bi-search"></i></button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- แทรกคำสั่ง HTML -->
+	<a name="TOP"></a>
+	<h1 class="p-3 text-primary"><i class="bi bi-bookmark-fill"></i> ที่เที่ยวใกล้ มทร.ตะวันออก จักรพงษภูวนารถ</h1>
+
+	<div id="carouselExampleIndicators" class="carousel slide">
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="./images/park1.png" class="w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="./images/park1.png" class="w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="./images/park1.png" class="w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="./images/park1.png" class="w-100" alt="...">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+
+<!-- 	<div class="myimage">
+		<img src="./images/market.png" title="ตลาดห้วยขวาง">
+		<img src="./images/park.png" title="ตลาดนัดสวนจตุจักร">
+		<img src="./images/store.png" title="เซ็นทรัลพระราม 9">
+		<img src="./images/award.png" title="อนุสาวรีย์ชัยสมรภูมิ">
+	</div> -->
+<!-- 	<p>
+		<ul class="mycontent">
+			<li>ตลาด<span id="hl">ห้วยขวาง</span></li>
+			<li>อนุสาวรีย์ชัยสมรภูมิ</li>
+			<li>ตลาดนัด<span id="hl">จตุจักร</span></li>
+			<li>เซ็นทรัล<span id="hl">พระราม 9</span></li>
+			<li>จ๊อดแฟร์</li>
+		</ul>
+	</p> -->
+	<div class="m-3">
+	  <div class="row">
+	  	<h1 class="p-3 display-6 text-primary"><i class="bi bi-bookmark-heart-fill"></i> สถานที่แนะนำ</h1>
+	  </div>
+	  <div class="row justify-content-center">
+	    <div class="col mt-3">
+			<div class="card" style="width: 25rem;">
+			  <img src="./images/park1.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">ตลาดห้วยขวาง</h5>
+			    <p class="card-text">ตลาดห้วยขวาง เป็นตลาดที่เปิดตลอด 24 ชั่วโมง มีอาหารหลากหลาย และ ราครถูก</p>
+			    <a href="#" class="btn btn-primary">รายละเอียด</a>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col mt-3">
+			<div class="card" style="width: 25rem;">
+			  <img src="./images/park1.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col mt-3">
+			<div class="card" style="width: 25rem;">
+			  <img src="./images/park1.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col mt-3">
+			<div class="card" style="width: 25rem;">
+			  <img src="./images/park1.png" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="position-fixed bottom-0 end-0">
+		<a href="#TOP" class="btn btn-primary"><i class="bi bi-arrow-up-circle-fill"></i> Top</a>
+	</div>
+
+	<footer class="p-5 text-center bg-primary-subtle">
+		<p class="text-black-50">Copyright &copy; 2023-2024 By Khaegchumpol</p>
+	</footer>
+</body>
+</html>
