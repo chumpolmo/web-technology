@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Week07: JavaScript</title>
+		<meta name="author" content="Beritokai">
+		<meta name="description" content="นำเสนอการใช้งานเกี่ยวกับภาษาจาวาสคริปต์">
+  		<meta name="keywords" content="JavaScript, js, html">
+		<script src="js/9999_9.js"></script>
+	</head>
+	<body>
+
+		<!-- Add HTML elements with JavaScript -->
+		<div style="text-align: center;padding: 10px;" id="myWeb">
+			<h1>การปรับเปลี่ยน HTML elements ด้วย JavaScript</h1>
+			<div id="myTxt1">สวัสดีผมชื่อ Beritokai</div>
+			<div id="myTxt2">ยังไม่ได้ดำเนินคัดลอก</div>
+			<button onclick="copyText()">Copy Text</button>
+			<button onclick="clearText()">Reset</button>
+
+			<h1>ควบคุมไฟงานคริสต์มาส</h1>
+			<button ondblclick="controlLight(1)">On</button>
+			<img src="images/christmas-loff.png" id="myImg1" style="width: 50%;">
+			<button ondblclick="controlLight(0)">Off</button>
+
+			<h1>ควบคุมการแสดงผลหน้าเว็บเพจ</h1>
+			<button onclick="changeFont('small')">S</button>
+			<button onclick="changeFont('medium')">M</button>
+			<button onclick="changeFont('large')">L</button><br/>
+			<button onclick="changeBg('#C0C0C0')">Silver</button>
+			<button onclick="changeBg('#DDA0DD')">Plum</button>
+			<button onclick="changeBg('#98FB98')">Green</button>
+		</div>
+
+		<!-- JavaScript และ HTML Forms -->
+		<div style="text-align: center; padding: 10px; border:2px dashed #98FB98;">
+			<h1>การคำนวณราคาสินค้ารวมภาษี</h1>
+			<hr />
+			<form>
+				<label>ราคาสินค้า</label>
+				<input type="text" name="prodPrice" id="prodPriceId"><br />
+				<label>Vat (%)</label>
+				<input type="number" name="prodVat" id="prodVatId"><br />
+				<button type="button" onclick="calculate()">คำนวณ</button>
+				<button type="reset">เคลียร์</button>
+			</form>
+			<h2>ผลการคำนวณ</h2>
+			<hr />
+			<p>
+			ราคาสินค้า: <label id="outProdPrice">-</label> บาท<br />
+			Vat <label id="outProdVat">-</label>%: <label id="outProdVp">-</label> บาท<br />
+			ราคารวม: <label id="outTotalPrice">-</label> บาท<br />
+			</p>
+		</div>
+
+	</body>
+</html>
